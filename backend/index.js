@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000;
 
 // mongo connection
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect("mongodb://mdb:83UTOvTBhmM1wns2p6wVxfQbwdM37xuwh2xcrmIS3RCOWgyhNI4trtimCQw471SO02C2SzomgRlcACDbu8xHBQ==@mdb.mongo.cosmos.azure.com:10255/mern-database-01?ssl=true&retrywrites=false&maxIdleTimeMS=120000&appName=@mdb@", {
     useUnifiedTopology: true,
     retryWrites: false
  })
