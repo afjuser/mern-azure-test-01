@@ -166,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
   \************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n//const baseUrl = \"https://mern-azure-web-app.azurewebsites.net\";\n\nvar baseUrl = \"http://localhost:5000/api\";\n/* harmony default export */ __webpack_exports__[\"default\"] = (baseUrl);\n\n//# sourceURL=webpack://frontend/./src/baseURL.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar baseUrl = \"https://mern-azure-web-app.azurewebsites.net\";\n\n//const baseUrl = \"http://localhost:5000/api\"; \n\n/* harmony default export */ __webpack_exports__[\"default\"] = (baseUrl);\n\n//# sourceURL=webpack://frontend/./src/baseURL.js?");
 
 /***/ }),
 
