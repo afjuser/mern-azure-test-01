@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {useParams, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import baseUrl from "../baseURL"; 
 
 export default function Create() {
@@ -25,7 +25,7 @@ export default function Create() {
    const newPerson = { ...form };
 
  
-   await fetch(baseUrl +"/api/record/add", {
+   await fetch(baseUrl +"/record/add", {
      method: "POST",
      headers: {
        "Content-Type": "application/json",
@@ -38,7 +38,7 @@ export default function Create() {
    });
  
    setForm({ name: "", position: "", level: "" });
-   navigate("/");
+   navigate("/portal");
  }
  
  // This following section will display the form that takes the input from the user.

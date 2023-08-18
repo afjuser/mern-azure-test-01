@@ -15,7 +15,7 @@ export default function Edit() {
  useEffect(() => {
    async function fetchData() {
      const id = params.id.toString();
-     const response = await fetch(`${baseUrl}/api/record/${params.id.toString()}`);
+     const response = await fetch(`${baseUrl}/record/${params.id.toString()}`);
  
      if (!response.ok) {
        const message = `An error has occurred: ${response.statusText}`;
@@ -26,7 +26,7 @@ export default function Edit() {
      const record = await response.json();
      if (!record) {
        window.alert(`Record with id ${id} not found`);
-       navigate("/");
+       navigate("/portal");
        return;
      }
  
@@ -54,7 +54,7 @@ export default function Edit() {
    };
  
    // This will send a post request to update the data in the database.
-   await fetch(`${baseUrl}/api/update/${params.id}`, {
+   await fetch(`${baseUrl}/update/${params.id}`, {
      method: "PUT",
      body: JSON.stringify(editedPerson),
      headers: {
