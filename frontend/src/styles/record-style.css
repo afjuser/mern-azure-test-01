@@ -1,0 +1,59 @@
+.text-white{
+    color: white;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-right-15 {
+    margin-right: 15px;
+}
+
+.margin-left-10-percent {
+    margin-left: 10%;
+}
+
+.create-style {
+    float: right;
+    margin: 20px 10%;
+}
+
+.tableFixHead {
+    overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+    height: 500px; /* gives an initial height of 200px to the table */
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 25px;  
+    background: white;
+}
+
+.tableFixHead thead th {
+    position: sticky; /* make the table heads sticky */
+    top: 0px; /* table head will be placed from the top of the table and sticks to it */
+    background: darkslategray;
+    color: white;
+}
+table {
+    border-collapse: collapse; /* make the table borders collapse to each other */
+    width: 90%;
+}
+th,
+td {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+}
+th {
+    background: #eee;
+}
+
+.form-style {
+    padding: 10px;
+}
+
+.create-form-style {
+    background: darkslategray;
+    padding: 20px;
+    border-radius: 0.5em;
+    color: white;
+}

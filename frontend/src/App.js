@@ -8,15 +8,18 @@ import Navbar from "./components/navbar";
 import RecordList from "./components/recordList";
 import Edit from "./components/edit";
 import Create from "./components/create";
+import Login from "./main/login";
+import Register from "./main/register";
 
 const App = () => {
     return (
         <div>
-            <Navbar />
             <Routes>
-                <Route exact path="/portal" element={<RecordList />} />
+                <Route exact path="/portal/login" element={ <Login/> } />
+                <Route path="/portal/record" element={<RecordList />} />
                 <Route path="/portal/edit/:id" element={<Edit />} />
                 <Route path="/portal/create" element={<Create />} />
+                <Route path="/portal/register" element={<Register />} />
             </Routes>
         </div>
     );

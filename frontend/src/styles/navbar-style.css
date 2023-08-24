@@ -1,0 +1,12 @@
+.navbar-background {
+    background: whitesmoke;
+}
+
+.nav-item-style {
+    background: cadetblue;
+    border-radius: 0.32em;
+}
+
+.logout-btn-style {
+    margin-left: 86%;
+}
